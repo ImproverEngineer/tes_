@@ -1,0 +1,10 @@
+D:\GitExt\teseract\TeseractProb\TeseractProb\bin\Debug\TeseractProb.exe.config
+D:\GitExt\teseract\TeseractProb\TeseractProb\bin\Debug\TeseractProb.exe
+D:\GitExt\teseract\TeseractProb\TeseractProb\bin\Debug\TeseractProb.pdb
+D:\GitExt\teseract\TeseractProb\TeseractProb\obj\Debug\TeseractProb.csproj.AssemblyReference.cache
+D:\GitExt\teseract\TeseractProb\TeseractProb\obj\Debug\TeseractProb.TsForm.resources
+D:\GitExt\teseract\TeseractProb\TeseractProb\obj\Debug\TeseractProb.Properties.Resources.resources
+D:\GitExt\teseract\TeseractProb\TeseractProb\obj\Debug\TeseractProb.csproj.GenerateResource.cache
+D:\GitExt\teseract\TeseractProb\TeseractProb\obj\Debug\TeseractProb.csproj.CoreCompileInputs.cache
+D:\GitExt\teseract\TeseractProb\TeseractProb\obj\Debug\TeseractProb.exe
+D:\GitExt\teseract\TeseractProb\TeseractProb\obj\Debug\TeseractProb.pdb
