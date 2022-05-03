@@ -32,12 +32,12 @@ namespace TeseractProb
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TsForm));
             this.picture = new System.Windows.Forms.PictureBox();
             this.AddImage = new System.Windows.Forms.Button();
-            this.showText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.SaveText = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.readyText = new System.Windows.Forms.ListBox();
+            this.clearText = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,18 +60,10 @@ namespace TeseractProb
             this.AddImage.UseVisualStyleBackColor = true;
             this.AddImage.Click += new System.EventHandler(this.AddImage_Click);
             // 
-            // showText
-            // 
-            this.showText.Location = new System.Drawing.Point(12, 306);
-            this.showText.Multiline = true;
-            this.showText.Name = "showText";
-            this.showText.Size = new System.Drawing.Size(386, 138);
-            this.showText.TabIndex = 2;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 287);
+            this.label1.Location = new System.Drawing.Point(13, 300);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 13);
             this.label1.TabIndex = 3;
@@ -87,15 +79,15 @@ namespace TeseractProb
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // SaveText
             // 
-            this.button2.Location = new System.Drawing.Point(276, 206);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 29);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Сохранить";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.SaveText.Location = new System.Drawing.Point(276, 206);
+            this.SaveText.Name = "SaveText";
+            this.SaveText.Size = new System.Drawing.Size(122, 29);
+            this.SaveText.TabIndex = 5;
+            this.SaveText.Text = "Сохранить";
+            this.SaveText.UseVisualStyleBackColor = true;
+            this.SaveText.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -107,27 +99,35 @@ namespace TeseractProb
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // readyText
             // 
-            this.button4.Location = new System.Drawing.Point(276, 82);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(122, 29);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Прочитать";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.readyText.FormattingEnabled = true;
+            this.readyText.Location = new System.Drawing.Point(16, 316);
+            this.readyText.Name = "readyText";
+            this.readyText.Size = new System.Drawing.Size(382, 121);
+            this.readyText.TabIndex = 8;
+            // 
+            // clearText
+            // 
+            this.clearText.Location = new System.Drawing.Point(276, 276);
+            this.clearText.Name = "clearText";
+            this.clearText.Size = new System.Drawing.Size(122, 29);
+            this.clearText.TabIndex = 9;
+            this.clearText.Text = "Отчистить";
+            this.clearText.UseVisualStyleBackColor = true;
+            this.clearText.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // TsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(410, 456);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.clearText);
+            this.Controls.Add(this.readyText);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.SaveText);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.showText);
             this.Controls.Add(this.AddImage);
             this.Controls.Add(this.picture);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -143,12 +143,12 @@ namespace TeseractProb
 
         private System.Windows.Forms.PictureBox picture;
         private System.Windows.Forms.Button AddImage;
-        private System.Windows.Forms.TextBox showText;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button SaveText;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ListBox readyText;
+        private System.Windows.Forms.Button clearText;
     }
 }
 

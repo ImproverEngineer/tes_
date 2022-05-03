@@ -31,7 +31,7 @@ namespace TeseractProb
             openFileDialog.InitialDirectory = Directory.GetCurrentDirectory() + @"\ImageViewText";
             if (openFileDialog.ShowDialog() == DialogResult.OK){
                 //работа tesseract
-                showText.Text = teseractRead(openFileDialog.FileName);
+                readyText.Items.Add(teseractRead(openFileDialog.FileName));
                 picture.Image = Image.FromFile(openFileDialog.FileName);
             }
             FileName = openFileDialog.FileName;
@@ -44,7 +44,7 @@ namespace TeseractProb
         /// <returns></returns>
         private string teseractRead(string fileName) 
         {
-            var img = new Bitmap(FileName);
+            var img = new Bitmap(fileName);
             var ocr = new TesseractEngine("./dataset", "rus", EngineMode.LstmOnly);
             var page = ocr.Process(img);
             return page.GetText();            
@@ -63,21 +63,31 @@ namespace TeseractProb
 
         private void button3_Click(object sender, EventArgs e)
         {
+            readyText.Items.Clear();
            DBase.DBase dBase = new DBase.DBase();
             foreach (var text in dBase.readDB())
-            {              
-                showText.Text +=  text + Environment.NewLine;
+            {
+                readyText.Items.Add(text);
             }
         }
 
+
         private void button2_Click(object sender, EventArgs e)
         {
-
+            DBase.DBase dBase = new DBase.DBase();
+            foreach (var text in readyText.Items) 
+            {
+                dBase.insertTextDb(text.ToString());
+                if (dBase.Error != "") 
+                {
+                     
+                }
+            }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
-
+            readyText.Items.Clear();
         }
     }
 }
