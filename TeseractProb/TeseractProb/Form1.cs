@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-
 namespace TeseractProb
 {
     public partial class TsForm : Form
@@ -40,6 +39,15 @@ namespace TeseractProb
         {
             picture.Image = null;
             FileName = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+           DBase.DBase dBase = new DBase.DBase();
+            foreach (var text in dBase.readDB())
+            {              
+                showText.Text +=  text + Environment.NewLine;
+            }
         }
     }
 }
