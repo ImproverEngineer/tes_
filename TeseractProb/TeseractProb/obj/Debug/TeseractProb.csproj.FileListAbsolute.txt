@@ -17,3 +17,8 @@ D:\GitExt\teseract\TeseractProb\TeseractProb\bin\Debug\EntityFramework.SqlServer
 D:\GitExt\teseract\TeseractProb\TeseractProb\bin\Debug\System.Data.SQLite.xml
 D:\GitExt\teseract\TeseractProb\TeseractProb\obj\Debug\TeseractProb.csproj.AssemblyReference.cache
 D:\GitExt\teseract\TeseractProb\TeseractProb\obj\Debug\TeseractProb.csproj.CopyComplete
+D:\GitExt\teseract\TeseractProb\TeseractProb\bin\Debug\x86\leptonica-1.80.0.dll
+D:\GitExt\teseract\TeseractProb\TeseractProb\bin\Debug\x86\tesseract41.dll
+D:\GitExt\teseract\TeseractProb\TeseractProb\bin\Debug\x64\leptonica-1.80.0.dll
+D:\GitExt\teseract\TeseractProb\TeseractProb\bin\Debug\x64\tesseract41.dll
+D:\GitExt\teseract\TeseractProb\TeseractProb\bin\Debug\Tesseract.dll
